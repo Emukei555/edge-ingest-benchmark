@@ -1,5 +1,6 @@
-# IntelliJ / IDE
+# IntelliJ / IDE / VS Code
 .idea/
+.vscode/
 *.iml
 *.iws
 

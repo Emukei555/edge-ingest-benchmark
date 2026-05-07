@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'io.gatling.gradle' version '3.13.4'
+}
+
+// Gradle 8+ 向けの応急処置です。消さないでください！
+project.ext.set('reportsDir', file("build/reports"))
+
+group = 'com.example'
+version = '0.1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    gatlingImplementation 'io.gatling:gatling-mqtt-java:3.13.4'
+}
+
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}

@@ -1,0 +1,16 @@
+# IntelliJ / IDE
+.idea/
+*.iml
+*.iws
+
+# Gradle / Java
+.gradle/
+build/
+out/
+
+# C# (.NET)
+bin/
+obj/
+
+# Gatling Results
+results/

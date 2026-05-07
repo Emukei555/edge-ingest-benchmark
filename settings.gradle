@@ -1,0 +1,17 @@
+pluginManagement {
+    repositories {
+        mavenCentral()
+        gradlePluginPortal()
+    }
+    plugins {
+        id 'io.quarkus' version '3.35.2'
+        id 'org.springframework.boot' version '3.3.4'
+        id 'io.spring.dependency-management' version '1.1.6'
+    }
+}
+
+rootProject.name = 'edge-ingest-benchmark'
+
+include 'implementations:spring-boot'
+include 'implementations:quarkus'
+include 'load-tests:gatling'
